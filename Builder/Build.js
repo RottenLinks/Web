@@ -5,7 +5,7 @@ import {
 } from "https://deno.land/std@0.122.0/fs/mod.ts";
 
 
-const dir_topics = '../Topics';
+const dir_topics = '../docs/Topics';
 const dir_data = '../Data';
 
 const repo = `https://github.com/RottenLinks/Web`;
