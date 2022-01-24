@@ -1,0 +1,13 @@
+Name : WAIL
+Logo : WAIL.png
+Github : https://github.com/machawk1/wail
+Systems :
+    Windows : Full
+    MacOS : Full
+    Linux : Indirect
+
+Integration:
+    Heritrix : 3.2.0
+    OpenWayback : 2.4.0
+
+FAQ: https://github.com/machawk1/wail/wiki/FAQ
