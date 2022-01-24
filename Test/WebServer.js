@@ -9,8 +9,8 @@ const path = new URL('.',import.meta.url)
     .pathname.replace('%20',' ');
 
 const
-    root = `${ path }../Topics/`,
-    index = 'Index.html',
+    root = `${ path }../docs/`,
+    index = 'index.html',
     port = 9233;
 
 

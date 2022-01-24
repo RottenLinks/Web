@@ -5,10 +5,10 @@ import {
 } from "https://deno.land/std@0.122.0/fs/mod.ts";
 
 
-const dir_topics = '../docs/Topics';
+const dir_topics = '../docs/';
 const dir_data = '../Data';
 
-const repo = `https://github.com/RottenLinks/Web`;
+const repo = `https://raw.githubusercontent.com/RottenLinks/Web/main`;
 const favicon = `${ repo }/Resources/Logos/RottenLinks.png`;
 
 
@@ -50,7 +50,7 @@ const template = `
     </html>
 `;
 
-await Deno.writeTextFile(join(dir_topics,'Index.html'),template);
+await Deno.writeTextFile(join(dir_topics,'index.html'),template);
 
 
 
