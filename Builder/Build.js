@@ -8,7 +8,7 @@ import {
 const dir_topics = '../docs/';
 const dir_data = '../Data';
 
-const repo = `https://raw.githubusercontent.com/RottenLinks/Web/main`;
+const repo = `https://rottenlinks.github.io/Web/`;
 const favicon = `${ repo }/Resources/Logos/RottenLinks.png`;
 
 
@@ -42,7 +42,7 @@ const template = `
     <html>
         <head>
             <link rel = 'icon' type = 'image/png' href = '${ favicon }'>
-            <link rel = 'stylesheet' href = '${ repo }/Resources/Styles/General.css'>
+            <link rel = 'stylesheet' type = 'text/css' href = '${ repo }/Resources/Styles/General.css'>
         </heady>
         <body>
             ${ toolcode }
