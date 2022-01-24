@@ -1,18 +1,15 @@
 
-import {
-  emptyDir,
-  emptyDirSync,
-} from "https://deno.land/std@0.122.0/fs/mod.ts";
+import { ensureDir } from "https://deno.land/std@0.122.0/fs/mod.ts";
 
 
-const dir_topics = '../docs/';
+const dir_topics = '../../Page/';
 const dir_data = '../Data';
 
 const repo = `https://rottenlinks.github.io/Web/`;
 const favicon = `${ repo }/Resources/Logos/RottenLinks.png`;
 
 
-await emptyDir(dir_topics);
+await ensureDir(dir_topics);
 
 
 import { walk } from "https://deno.land/std@0.122.0/fs/mod.ts";
