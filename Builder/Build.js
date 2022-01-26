@@ -39,7 +39,7 @@ const template = `
     <html>
         <head>
             <link rel = 'icon' type = 'image/png' href = '${ favicon }'>
-            <link rel = 'stylesheet' type = 'text/css' href = '${ repo }/Resources/Styles/General.css'>
+            <link rel = 'stylesheet' type = 'text/css' href = './Resources/Styles/General.css'>
         </heady>
         <body>
             ${ toolcode }
@@ -55,11 +55,31 @@ function toolToHtml(tool){
 
     const preview = `${ repo }/Resources/Logos/${ tool.Logo }`;
 
+    let content = '';
+
+    if(tool.Tags.includes('GUI')){
+        const { Integration } = tool;
+        let integrations = '';
+        for(const integration in Integration)
+            integrations += `<li><b>${ integration }</b><code>${ Integration[integration] }</code></li>`
+        content += `
+            <div class = 'Integrations'>
+                <h4>Integrates:</h4>
+                <ul>${ integrations }</ul>
+            </div>
+        `;
+    }
+
     return `
         <div class = 'Tool'>
-            <div class = 'Header'>
+            <div class = 'Side'>
                 <img src = '${ preview }'>
+            </div>
+            <div class = 'Main'>
                 <h2>${ tool.Name }</h2>
+                <div class = 'Content'>
+                    ${ content }
+                </div>
             </div>
         </div>
     `;
