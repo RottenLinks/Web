@@ -7,7 +7,58 @@ body {
     color: white;
 }
 
-.Tool > .Header {
+code {
+    background-color: #00000020;
+    padding: 0px 4px 1px;
+    border-radius: 2px;
+}
+
+ul {
+    padding-inline-start: 20px;
+}
+
+li {
+    font-size: 12px;
+}
+
+.Tool {
     display: flex;
+}
+
+
+.Tool > .Side ,
+.Tool > .Main {
+    display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
+}
+
+.Tool > .Side {
+    display: flex;
+    width: 200px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.Tool > .Side > img {
+    width: fit-content;
+}
+
+.Tool > .Main > h2 {
+    font-size: 30px;
+    height: fit-content;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.Tool > .Main .Integrations > h4 {
+    margin-bottom: 2px;
+}
+
+.Tool > .Main .Integrations > ul {
+    margin-top: 2px;
+}
+
+.Tool > .Main .Integrations > ul > li > b {
+    padding-right: 12px;
 }
